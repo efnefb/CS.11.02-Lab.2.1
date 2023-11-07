@@ -4,20 +4,59 @@ public class Main {
 
     }
 
-    // 1. add
-    
-    // 2. add
+    public static int add(int x,int y){
+        return (x + y);
+    }
 
-    // 3. morningGreeting
+    public static int add(int a, int b, int c, int d){
+        return (a + b + c + d);
+    }
 
-    // 4. afternoonGreeting
+    public static String morningGreeting(String x){
+        String greeting = "早上好 ";
+        return (greeting + x);
+    }
 
-    // 5. triple
+    public static String afternoonGreeting(String x){
+        String greeting = "下午好 ";
+        return (greeting + x);
+    }
 
-    // 6. half
+    public static String triple(String x){
+        return (x+x+x);
+    }
 
-    // 7. roundPositiveValueToNearestInteger
+    public static double half(int x){
+        double y = (double) x / 2;
+        return y;
 
-    // 8. roundNegativeValueToNearestInteger
+    }
 
+    public static int roundPositiveValueToNearestInteger(double x){
+        if (x>=0) {
+            int y = (int) x;
+            double z = y + 0.5;
+            if (x >= z) {
+                return (y + 1);
+            } else {
+                return (y);
+            }
+        }
+        return 0;
+
+
+    }
+
+    public static int roundNegativeValueToNearestInteger(double x){
+        if (x<=0) {
+            int y = (int) x;
+            double z = y - 0.5;
+            if (x <= z) {
+                return (y - 1);
+            } else {
+                return (y);
+            }
+        }
+        return 0;
+    }
 }
